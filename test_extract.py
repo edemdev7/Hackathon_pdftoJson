@@ -5,7 +5,7 @@ from pdf2image import convert_from_path
 from PIL import Image
 
 INPUT_FOLDER = "downloads"
-OUTPUT_FOLDER = "extracted_texts"  # Dossier pour stocker les fichiers extraits
+OUTPUT_FOLDER = "extracted_texts"  
 POPPLER_PATH = "/usr/bin"  
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
