@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Analyse PDF Juridique</title>
+  <meta charset="UTF-8">
+  <title>Analyse PDF Juridique</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script>
+    function showSpinner() {
+      document.getElementById("spinner").style.display = "inline-block";
+    }
+  </script>
 </head>
 <body>
-    <h1>🧠 Analyse de document PDF</h1>
+  <h1>🧠 Analyse automatique de documents PDF juridiques</h1>
 
-    <form action="/" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" accept=".pdf" required />
-        <button type="submit">Analyser</button>
-    </form>
+  <form method="post" enctype="multipart/form-data" onsubmit="showSpinner()">
+    <input type="file" name="file" accept=".pdf" required />
+    <button type="submit">Analyser</button>
+    <div id="spinner" class="spinner" style="display: none;"></div>
+  </form>
 
-    {% if result %}
+  {% if result %}
     <h2>✅ Résultat JSON :</h2>
     <pre>{{ result | tojson(indent=2) }}</pre>
-    {% endif %}
+
+    <form method="post" action="/download-json/">
+      <input type="hidden" name="json_data" value='{{ result | tojson }}'>
+      <button type="submit" style="margin-top: 1rem;">📥 Télécharger JSON</button>
+    </form>
+  {% endif %}
+
+  <footer>
+    <p>&copy; 2025 - Hackathon pdftoJson powered by Edemdev7 🚀</p>
+  </footer>
 </body>
 </html>

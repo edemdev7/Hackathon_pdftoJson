@@ -4,9 +4,11 @@ from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 import shutil
 import os
+import io
 import uuid
 from api.services.extraction import process_and_analyze_pdf
-
+from fastapi.responses import StreamingResponse
+from fastapi import Form
 app = FastAPI()
 
 app.mount("/static", StaticFiles(directory="api/static"), name="static")
@@ -34,3 +36,15 @@ async def upload_and_process_pdf(request: Request, file: UploadFile = File(...))
     result = process_and_analyze_pdf(file_path)
 
     return templates.TemplateResponse("index.html", {"request": request, "result": result})
+
+@app.post("/download-json/")
+async def download_json(json_data: str = Form(...)):
+    buffer = io.BytesIO()
+    buffer.write(json_data.encode("utf-8"))
+    buffer.seek(0)
+
+    return StreamingResponse(
+        buffer,
+        media_type="application/json",
+        headers={"Content-Disposition": "attachment; filename=result.json"}
+    )
