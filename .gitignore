@@ -1,2 +1,6 @@
 decrets/
 cm/
+*.pyc
+*.pyo
+*.pyd
+downloads/
