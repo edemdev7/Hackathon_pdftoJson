@@ -16,13 +16,12 @@ OCR_LANG = "fra+eng"
 OCR_CONFIG = "--psm 6"
 
 # === AZURE OPENAI CONFIG ===
-AZURE_API_KEY = os.getenv("AZURE_OPENAI_KEY")
 AZURE_ENDPOINT = "https://instancehackatonpionners04.openai.azure.com"
 AZURE_API_VERSION = "2024-05-01-preview"
 AZURE_DEPLOYMENT = "gpt-4o-pionners21"
 
 client = AzureOpenAI(
-    api_key=AZURE_API_KEY,
+    api_key=os.getenv("AZURE_OPENAI_KEY"),
     api_version=AZURE_API_VERSION,
     azure_endpoint=AZURE_ENDPOINT,
 )
