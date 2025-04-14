@@ -65,9 +65,10 @@ Tu es un assistant juridique. Analyse le texte suivant (compte rendu ou décret)
 - date
 - ministere (ou entité concernée)
 - objet
-- articles (liste de titres d'articles ou paragraphes)
-- signataires (liste de noms ou entités)
-- autres informations pertinentes 
+- articles (liste de titres d'articles ou paragraphes et leur contenu)
+- signataires (liste de noms ou entités,date_signature si applicable)
+- Toutes autres informations pertinentes 
+
 
 Réponds uniquement avec un JSON valide sans texte supplémentaire.
 
@@ -84,21 +85,31 @@ Texte à analyser :
                 {"role": "system", "content": "Tu es un assistant juridique expert."},
                 {"role": "user", "content": prompt}
             ],
-            temperature=0.2,
+            temperature=0.3,
             max_tokens=1500
         )
+
         content = response.choices[0].message.content.strip()
 
-        print("🧾 Réponse brute GPT :")
-        print(content)  # Debug ici
+        # 🔥 Nettoyage : retirer les balises ```json ... ```
+        if content.startswith("```json"):
+            content = content[7:]
+        if content.endswith("```"):
+            content = content[:-3]
+        content = content.strip()
+
+        print("🧾 Réponse nettoyée :")
+        print(content)
 
         return json.loads(content)
+
     except Exception as e:
         print(f"❌ Erreur GPT Azure : {e}")
         return {
             "erreur": str(e),
             "reponse_brute": content if 'content' in locals() else "Aucune réponse"
         }
+
 
 
 # === Pipeline principal ===

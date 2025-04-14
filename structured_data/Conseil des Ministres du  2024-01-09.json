@@ -1,4 +1,41 @@
 {
-  "erreur": "Expecting value: line 1 column 1 (char 0)",
-  "reponse_brute": "```json\n{\n  \"type_document\": \"compte_rendu\",\n  \"numero_decret\": null,\n  \"date\": \"2024-01-09\",\n  \"ministere\": \"Présidence de la République\",\n  \"objet\": \"Compte-rendu du Conseil des Ministres\",\n  \"articles\": [\n    \"I- Mesures normatives: Adoption du décret portant approbation des statuts du Centre de Partenariat et d’Expertise pour le Développement durable (CePED).\",\n    \"II-1. Régularisation de la situation administrative de trente et un (31) agents de l'Etat intervenant dans les universités publiques.\",\n    \"II-2. Approbation du document de Politique nationale de Décentralisation et de Déconcentration (PONADEC) 2024-2033.\",\n    \"III- Mesures individuelles: Nominations à la présidence de la République.\"\n  ],\n  \"signataires\": [\n    \"Edouard OUIN-OURO\"\n  ],\n  \"autres_informations_pertinentes\": {\n    \"nominations\": {\n      \"Collège du Conseil national de l'Éducation\": {\n        \"Membres désignés par le Président de la République\": [\n          \"Noël Ahonangnon GBAGUIDI\",\n          \"Raoul Christian ADEGOU\"\n        ],\n        \"Membres désignés par les ministres chargés de l'Éducation\": [\n          \"Giséle MARTIN\",\n          \"Lucien KOKOU\",\n          \"Sé N’Bouro OUOROU BOUN\"\n        ],\n        \"Personnes présélectionnées par appel à candidatures\": [\n          \"Sossou Etienne AHOUANKA\",\n          \"Kévidjo ADOHO\",\n          \"Bessan Philippe KAKPO\",\n          \"Idohou Ogounyèmi Martin AGNIDE\",\n          \"Kossivi ATTIKLEME\",\n          \"Cossi Venant Célestin QUENUM\",\n          \"Moussiliou MOUSTAPHA\",\n          \"Abdel Jawed Adéchinan BOURAÏMA\"\n        ]\n      },\n      \"Membres de l’Assemblée consultative du Conseil national de l'Éducation\": {\n        \"Représentants désignés par le Président de la République\": [\n          \"Noël Ahonangnon GBAGUIDI\",\n          \"Raoul Christian ADEGOU\"\n        ],\n        \"Représentants désignés par les ministres chargés de l'Éducation\": [\n          \"Gisele MARTIN\",\n          \"Lucien KOKOU\",\n          \"Sé N’Bouro OUOROU BOUN\"\n        ],\n        \"Représentants de la Délégation au Contrôle et à l'Éthique de l'Enseignement supérieur\": [\n          \"Marie Epiphane SOHOUENOU\",\n          \"Kpé Fo-Koku KPOGO\"\n        ],\n        \"Représentants de la Cellule Éducation à la présidence de la République\": [\n          \"Marie-Odile ATTANASSO\",\n          \"Victor MATRO\"\n        ],\n        \"Représentant du ministère en charge des Finances\": [\n          \"Rodrigue S. CHAOU\"\n        ],\n        \"Représentant du ministère en charge du Numérique\": [\n          \"Donald Régis HONTINFINDE\"\n        ],\n        \"Représentant de l'Association nationale des Communes du Bénin\": [\n          \"Zakari Filikibirou TASSOU\"\n        ],\n        \"Représentants des Directeurs départementaux des Enseignements secondaire, technique et de la Formation professionnelle\": [\n          \"Sanni BABIO\",\n          \"Sènan Flore GODJO\"\n        ],\n        \"Représentants des Directeurs départementaux des Enseignements maternel et primaire\": [\n          \"Camille C. TCHIAKPE\",\n          \"Comlan Justin AYELO\"\n        ],\n        \"Directeur général de l’Enseignement supérieur\": [\n          \"Abdou Karim Issaka YOUSSAO\"\n        ],\n        \"Représentant de l’Association des établissements privés d’enseignement supérieur pour l'éthique et la qualité\": [\n          \"Césaire AGOSSA\"\n        ],\n        \"Représentant de l’Union nationale des établissements privés d'enseignement supérieur\": [\n          \"Théophane AYI\"\n        ],\n        \"Directeur général du Centre béninois de la Recherche scientifique et de l'Innovation\": [\n          \"Tchokponhoué Tchégninougbo Marc KPODEKON\"\n        ],\n        \"Chercheur de grade de maître de recherche au moins\": [\n          \"Codjo Clément GNIMADI\"\n        ],\n        \"Représentant des présidents des Conseils d'administration des universités publiques\": [\n          \"Makpéhou Rogation TOSSOU\"\n        ],\n        \"Représentant des recteurs des universités nationales pluridisciplinaires\": [\n          \"Bertrand SOGBOSSI BOCCO\"\n        ],\n        \"Représentant des recteurs des universités nationales thématiques\": [\n          \"Agossou Bruno DJOSSA\"\n        ],\n        \"Directeur de l'Inspection pédagogique, de l'Innovation et de la Qualité du ministère en charge des Enseignements secondaire, technique et de la Formation professionnelle\": [\n          \"Bertin TOLITON\"\n        ],\n        \"Directeur de l'Inspection et de l'Innovation pédagogiques du ministère en charge de l'Enseignement primaire\": [\n          \"Pierre CHANOU\"\n        ],\n        \"Représentant de l’Assemblée consulaire de la Chambre des Métiers et de l’Artisanat du Bénin\": [\n          \"Comlan Cyr Jean-Pierre DAVODOUN\"\n        ],\n        \"Représentant de l’Association nationale des parents d'élèves\": [\n          \"Epiphane AZON\"\n        ],\n        \"Représentant des Organisations non gouvernementales en activité dans le secteur de l'Éducation\": [\n          \"Arsène C. ADIFFON\"\n        ],\n        \"Représentant des organisations d'employeurs\": [\n          \"Mansourou MOUDACHIROU\"\n        ],\n        \"Représentant du Réseau national des opérateurs privés pour la promotion de l’alphabétisation et des langues nationales\": [\n          \"Gado Brice LAFIA\"\n        ],\n        \"Représentant de la Fédération des associations des personnes vivant avec un handicap\": [\n          \"Nassirou DOMINGO\"\n        ],\n        \"Directeur de l’Enseignement maternel\": [\n          \"Mireille AFOUDA\"\n        ],\n        \"Directeur de l’Enseignement secondaire général\": [\n          \"Edmond HOUNTONDIJI\"\n        ],\n        \"Directeur général de l’Agence de Développement de l'Enseignement technique\": [\n          \"Fructueux S. AHO\"\n        ],\n        \"Directeur général de l’Agence pour la Construction des Infrastructures du secteur de l'Éducation\": [\n          \"Adam PIN"
+  "type_document": "compte_rendu",
+  "numero_decret": null,
+  "date": "2024-01-09",
+  "ministere": "Présidence de la République",
+  "objet": "Compte-rendu du Conseil des Ministres",
+  "articles": [
+    {
+      "titre": "Mesures normatives",
+      "contenu": "Adoption du décret portant approbation des statuts du Centre de Partenariat et d’Expertise pour le Développement durable (CePED)."
+    },
+    {
+      "titre": "Communications",
+      "contenu": [
+        {
+          "titre": "Régularisation de la situation administrative de trente et un (31) agents de l'Etat intervenant dans les universités publiques",
+          "contenu": "Autorisation de la régularisation de la situation administrative des agents concernés et leur reclassement dans un corps des personnels enseignants des universités publiques du Bénin."
+        },
+        {
+          "titre": "Approbation du document de Politique nationale de Décentralisation et de Déconcentration (PONADEC) 2024-2033",
+          "contenu": "Présentation des orientations stratégiques et des impacts attendus de la nouvelle génération du PONADEC, visant une modernisation de l'administration publique locale et un développement harmonieux du territoire national."
+        }
+      ]
+    },
+    {
+      "titre": "Mesures individuelles",
+      "contenu": "Nominations au sein du Conseil national de l'Éducation et de son Assemblée consultative, avec une liste détaillée des membres désignés ou présélectionnés."
+    }
+  ],
+  "signataires": [
+    {
+      "nom": "Edouard OUIN-OURO",
+      "date_signature": "2024-01-09"
+    }
+  ],
+  "autres_informations": {
+    "decret_adopte": "Décret portant approbation des statuts du Centre de Partenariat et d’Expertise pour le Développement durable (CePED).",
+    "politique_nationale": "PONADEC 2024-2033, visant un développement équilibré et harmonieux du territoire national.",
+    "nominations": "Nominations détaillées au sein du Conseil national de l'Éducation et de son Assemblée consultative."
+  }
 }

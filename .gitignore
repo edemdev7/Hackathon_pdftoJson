@@ -1,9 +1,11 @@
 decrets/
+extracted_texts/
+structured_data/
 cm/
+downloads/
 *.pyc
 *.pyo
 *.pyd
-downloads/
 *.egg-info/
 __pycache__/
 *.egg
@@ -19,3 +21,4 @@ __pycache__/
 *.env.*
 *.local
 *.local.*
+

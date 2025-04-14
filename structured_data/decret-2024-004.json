@@ -1,4 +1,92 @@
 {
-  "erreur": "Expecting value: line 1 column 1 (char 0)",
-  "reponse_brute": "```json\n{\n  \"type_document\": \"decret\",\n  \"numero_decret\": \"2024-004\",\n  \"date\": \"2024-01-09\",\n  \"ministere\": \"Conseil national de l'Education\",\n  \"objet\": \"Nomination des membres du Collège du Conseil national de l'Education\",\n  \"articles\": [\n    \"Article premier : Membres du Collège\",\n    \"Article 2 : Durée du mandat\",\n    \"Article 4 : Application\",\n    \"Article 5 : Dispositions finales\"\n  ],\n  \"signataires\": [\n    \"Patrice TALON\",\n    \"Eléonore YAYI LADEKAN\",\n    \"Salimane Karimou\",\n    \"Kouaro Yves Chabi\"\n  ],\n  \"autres_informations\": {\n    \"membres_nommes\": [\n      {\n        \"designation\": \"Président de la République\",\n        \"noms\": [\n          \"Ahonagnon Noël GBAGUIDI\",\n          \"Raoul Christian ADEKOU\"\n        ]\n      },\n      {\n        \"designation\": \"Ministres chargés de l'Education\",\n        \"noms\": [\n          \"Bat Gisèle Virginie ENIANLOKO HOUESSOU épouse MARTIN\",\n          \"Lucien KOKOU\",\n          \"Sé N’Bouro OUOROU BOUN\"\n        ]\n      },\n      {\n        \"designation\": \"Appel à candidatures\",\n        \"noms\": [\n          \"Sossou Etienne AHOUANKA\",\n          \"Kévidjo ADOHO\",\n          \"Bessan Philippe KAKPO\",\n          \"Martin Ogounyèmi AGNIDE IDOHOU\",\n          \"Kossivi ATTIKLEME\",\n          \"Cossi Venant Célestin QUENUM\",\n          \"Moussiliou MOUSTAPHA\",\n          \"Abdel Jawed Adéchinan BOURAÏMA\"\n        ]\n      }\n    ],\n    \"durée_mandat\": \"5 ans\",\n    \"abrogation\": \"Décret n° 2019-098 du 27 mars 2019\"\n  }\n}\n```"
+  "type_document": "decret",
+  "numero_decret": "2024-004",
+  "date": "09 janvier 2024",
+  "ministere": "Conseil national de l'Education",
+  "objet": "Nomination des membres du Collège du Conseil national de l'Education",
+  "articles": [
+    {
+      "titre": "Article premier : Membres du Collège",
+      "contenu": [
+        {
+          "categorie": "Membres désignés par le Président de la République",
+          "noms": [
+            "Ahonagnon Noël GBAGUIDI",
+            "Raoul Christian ADEKOU"
+          ]
+        },
+        {
+          "categorie": "Membres désignés par les ministres chargés de l'Education",
+          "noms": [
+            "Bat Gisèle Virginie ENIANLOKO HOUESSOU épouse MARTIN",
+            "Lucien KOKOU",
+            "Sé N’Bouro OUOROU BOUN"
+          ]
+        },
+        {
+          "categorie": "Membres sélectionnés par appel à candidatures",
+          "noms": [
+            "Sossou Etienne AHOUANKA",
+            "Kévidjo ADOHO",
+            "Bessan Philippe KAKPO",
+            "Martin Ogounyèmi AGNIDE IDOHOU",
+            "Kossivi ATTIKLEME",
+            "Cossi Venant Célestin QUENUM",
+            "Moussiliou MOUSTAPHA",
+            "Abdel Jawed Adéchinan BOURAÏMA"
+          ]
+        }
+      ]
+    },
+    {
+      "titre": "Article 2 : Durée du mandat",
+      "contenu": "Les membres du Collège du Conseil national de l'Education sont nommés pour un mandat de cinq (5) ans, qui court à compter de la date de leur installation."
+    },
+    {
+      "titre": "Article 4 : Application",
+      "contenu": "Le Ministre de l'Enseignement supérieur et de la Recherche scientifique, le Ministre des Enseignements secondaire, technique et de la Formation professionnelle et le Ministre des Enseignements maternel et primaire sont chargés, chacun en ce qui le concerne, de l'application du présent décret."
+    },
+    {
+      "titre": "Article 5 : Dispositions finales",
+      "contenu": "Le présent décret, qui prend effet pour compter de la date de sa signature, abroge les dispositions du décret n° 2019-098 du 27 mars 2019 portant nomination des membres du Conseil national de l'Education ainsi que toutes autres dispositions antérieures contraires. Il sera publié au Journal officiel."
+    }
+  ],
+  "signataires": [
+    {
+      "nom": "Patrice TALON",
+      "fonction": "Président de la République, Chef de l’État, Chef du Gouvernement",
+      "date_signature": "09 janvier 2024"
+    },
+    {
+      "nom": "Eléonore YAYI LADEKAN",
+      "fonction": "Ministre de l'Enseignement supérieur et de la Recherche scientifique"
+    },
+    {
+      "nom": "Salimane Karimou",
+      "fonction": "Ministre des Enseignements maternel et primaire"
+    },
+    {
+      "nom": "Kouaro Yves Chabi",
+      "fonction": "Ministre des Enseignements secondaire, technique et de la Formation professionnelle"
+    }
+  ],
+  "autres_informations": {
+    "ampliations": {
+      "PR": 6,
+      "AN": 4,
+      "CC": 2,
+      "CS": 2,
+      "C_COM": 2,
+      "CES": 2,
+      "HAAC": 2,
+      "HCJ": 2,
+      "MESRS": 2,
+      "MESTFP": 2,
+      "MEMP": 2,
+      "AUTRES_MINISTERES": 19,
+      "SGG": 4,
+      "INTERESSES": 13,
+      "JORB": 1
+    }
+  }
 }
