@@ -110,6 +110,26 @@ Texte à analyser :
             "reponse_brute": content if 'content' in locals() else "Aucune réponse"
         }
 
+def process_and_analyze_pdf(pdf_path):
+    filename = os.path.basename(pdf_path)
+    base_name = filename.replace(".pdf", "")
+
+    text_path = os.path.join(TEXT_FOLDER, base_name + ".txt")
+    json_path = os.path.join(JSON_FOLDER, base_name + ".json")
+
+    texte = extract_text_from_pdf(pdf_path)
+    if not texte or len(texte) < 20:
+        texte = extract_text_from_images(pdf_path)
+
+    with open(text_path, "w", encoding="utf-8") as f:
+        f.write(texte)
+
+    analyse = analyse_contenu_juridique(texte)
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(analyse, f, ensure_ascii=False, indent=2)
+
+    return analyse
+
 
 
 # === Pipeline principal ===

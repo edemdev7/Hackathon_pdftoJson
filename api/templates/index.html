@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Analyse PDF Juridique</title>
+</head>
+<body>
+    <h1>🧠 Analyse de document PDF</h1>
+
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".pdf" required />
+        <button type="submit">Analyser</button>
+    </form>
+
+    {% if result %}
+    <h2>✅ Résultat JSON :</h2>
+    <pre>{{ result | tojson(indent=2) }}</pre>
+    {% endif %}
+</body>
+</html>
