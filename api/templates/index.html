@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Analyse PDF Juridique</title>
+  <title>Analyse PDF </title>
   <link rel="stylesheet" href="/static/style.css">
   <script>
     function showSpinner() {
@@ -11,7 +11,7 @@
   </script>
 </head>
 <body>
-  <h1>🧠 Analyse automatique de documents PDF juridiques</h1>
+  <h1>🧠 Analyse automatique de documents PDF </h1>
 
   <form method="post" enctype="multipart/form-data" onsubmit="showSpinner()">
     <input type="file" name="file" accept=".pdf" required />
@@ -21,7 +21,7 @@
 
   {% if result %}
     <h2>✅ Résultat JSON :</h2>
-    <pre>{{ result | tojson(indent=2) }}</pre>
+    <pre>{{ result_display | safe }}</pre>
 
     <form method="post" action="/download-json/">
       <input type="hidden" name="json_data" value='{{ result | tojson }}'>
