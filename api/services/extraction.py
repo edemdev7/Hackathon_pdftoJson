@@ -65,10 +65,11 @@ Tu es un assistant juridique. Analyse le texte suivant (compte rendu ou décret)
 - date
 - ministere (ou entité concernée)
 - objet
-- articles (liste de titres d'articles ou paragraphes et leur contenu)
+- articles (liste de titres d'articles ou paragraphes et tout le  contenu sans résumé)
 - signataires (liste de noms ou entités,date_signature si applicable)
 - Toutes autres informations pertinentes 
 
+Si le texte n'est pas un décret ou un compte rendu, fais une analyse et retourne un JSON structuré 
 
 Réponds uniquement avec un JSON valide sans texte supplémentaire.
 
